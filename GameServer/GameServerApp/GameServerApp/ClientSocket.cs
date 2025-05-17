@@ -57,7 +57,7 @@ namespace GameServerApp
             m_Role = role;
             m_Role.clientSocket = this;
             //启动线程 进行接收数据
-            m_reveiveThread = new Thread(ReceiveMgr);
+            m_reveiveThread = new Thread(ReceiveMsg);
             m_reveiveThread.Start();
             m_CheckSendueue = OnCheckSendQueueCallBack;
             //temp
@@ -72,7 +72,7 @@ namespace GameServerApp
         /// <summary>
         /// 接收数据
         /// </summary>
-        private void ReceiveMgr()
+        private void ReceiveMsg()
         {
             //异步接收数据
             m_socket.BeginReceive(m_ReceiveBuffer, 0, m_ReceiveBuffer.Length, SocketFlags.None, ReceiveCallBack, m_socket);
@@ -169,6 +169,7 @@ namespace GameServerApp
                         }
                     }
                     //进行下一次接收数据包
+                    ReceiveMsg();
                 }
                 else
                 {
