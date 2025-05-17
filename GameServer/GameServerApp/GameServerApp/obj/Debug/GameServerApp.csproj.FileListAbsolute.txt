@@ -1,0 +1,14 @@
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.exe.config
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.exe
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.pdb
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.csproj.AssemblyReference.cache
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.csproj.CoreCompileInputs.cache
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.exe
+F:\UnityProject\MyProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.pdb
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.exe.config
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.exe
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\bin\Debug\GameServerApp.pdb
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.csproj.AssemblyReference.cache
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.csproj.CoreCompileInputs.cache
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.exe
+F:\UnityProject\MyProject\MyYouYouProject\YouYouGameProject_Server\GameServer\GameServerApp\GameServerApp\obj\Debug\GameServerApp.pdb
