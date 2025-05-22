@@ -1,4 +1,4 @@
-﻿using GameServerApp.Common;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -121,19 +121,39 @@ namespace GameServerApp
                                 m_ReceiveMS.Position = 2;
                                 //把包体读到byte[]数组
                                 m_ReceiveMS.Read(buffer, 0, currMsgLen);
-
+                                ushort protoCode = 0;
+                                byte[] protoContent = new byte[buffer.Length - 2];
                                 //临时处理
                                 //buffer 这个byte[]数组就是包体 也就是我们要的数据
                                 using (MMO_MemoryStream ms2 = new MMO_MemoryStream(buffer))
                                 {
-                                    string msg = ms2.ReadUTF8String();
-                                    Console.WriteLine(msg);
+                                    //string msg = ms2.ReadUTF8String();
+                                    //Console.WriteLine(msg);
+
+                                    protoCode = ms2.ReadUShort();
+                                    ms2.Read(protoContent, 0, protoContent.Length);
+                                }
+                                Console.WriteLine("protoCode---" + protoCode);
+
+                                if (protoCode == ProtoCodeDef.test)
+                                {
+                                    testProto test = testProto.GetProto(protoContent);
+                                    Console.WriteLine("protoId---" + test.Id);
+                                    Console.WriteLine("protoName---" + test.Name);
+                                    Console.WriteLine("protoAge---" + test.Age);
+
+
+                                    MailProto mailProto = new MailProto();
+                                    mailProto.IsSuccess = false;
+                                    mailProto.ErrorCode = -9999;
+                                    mailProto.content = "我是邮件";
+                                    this.SendMsg(mailProto.ToArray());
                                 }
 
                                 using (MMO_MemoryStream ms=new MMO_MemoryStream())
                                 {
-                                    ms.WriteUTF8String(string.Format("服务器时间" + DateTime.Now.ToString()));
-                                    this.SendMsg(ms.ToArray());
+                                    //ms.WriteUTF8String(string.Format("服务器时间" + DateTime.Now.ToString()));
+                                    //this.SendMsg(ms.ToArray());
                                 }
                                 //========================处理剩余字节数组======================================
 
@@ -186,9 +206,6 @@ namespace GameServerApp
 
         }
         #endregion
-
-
-
 
         //===========================================================
         #region OnCheckSendQueueCallBack 检查队列的委托回调

@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameServerApp.Common
-{
     public class MMO_MemoryStream: MemoryStream
     {
         public MMO_MemoryStream()
@@ -252,4 +250,4 @@ namespace GameServerApp.Common
         }
         #endregion
     }
-}
+

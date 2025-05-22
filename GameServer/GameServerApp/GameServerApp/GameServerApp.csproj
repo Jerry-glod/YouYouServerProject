@@ -44,14 +44,81 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientSocket.cs" />
+    <Compile Include="Common\EventDispatcher.cs" />
     <Compile Include="Common\MMO_MemoryStream.cs" />
+    <Compile Include="Common\Singleton.cs" />
+    <Compile Include="IProto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proto\Backpack_GoodsAddProto.cs" />
+    <Compile Include="Proto\Backpack_GoodsChangeReturnProto.cs" />
+    <Compile Include="Proto\Backpack_SearchProto.cs" />
+    <Compile Include="Proto\Backpack_SearchReturnProto.cs" />
+    <Compile Include="Proto\GameLevel_EnterProto.cs" />
+    <Compile Include="Proto\GameLevel_EnterReturnProto.cs" />
+    <Compile Include="Proto\GameLevel_FailProto.cs" />
+    <Compile Include="Proto\GameLevel_FailReturnProto.cs" />
+    <Compile Include="Proto\GameLevel_ResurgenceProto.cs" />
+    <Compile Include="Proto\GameLevel_ResurgenceReturnProto.cs" />
+    <Compile Include="Proto\GameLevel_VictoryProto.cs" />
+    <Compile Include="Proto\GameLevel_VictoryReturnProto.cs" />
+    <Compile Include="Proto\Goods_EquipPutProto.cs" />
+    <Compile Include="Proto\Goods_EquipPutReturnProto.cs" />
+    <Compile Include="Proto\Goods_SearchEquipDetailProto.cs" />
+    <Compile Include="Proto\Goods_SearchEquipDetailReturnProto.cs" />
+    <Compile Include="Proto\Goods_SellToSysProto.cs" />
+    <Compile Include="Proto\Goods_SellToSysReturnProto.cs" />
+    <Compile Include="Proto\Goods_UseItemProto.cs" />
+    <Compile Include="Proto\Goods_UseItemReturnProto.cs" />
+    <Compile Include="Proto\MailProto.cs" />
+    <Compile Include="Proto\ProtoCodeDef.cs" />
+    <Compile Include="Proto\RoleData_GoldChangeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_MondeyChangeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_RechargeProductReturnProto.cs" />
+    <Compile Include="Proto\RoleData_RechargeReturnProto.cs" />
+    <Compile Include="Proto\RoleData_SkillReturnProto.cs" />
+    <Compile Include="Proto\RoleOperation_CreateRoleProto.cs" />
+    <Compile Include="Proto\RoleOperation_CreateRoleReturnProto.cs" />
+    <Compile Include="Proto\RoleOperation_DeleteRoleProto.cs" />
+    <Compile Include="Proto\RoleOperation_DeleteRoleReturnProto.cs" />
+    <Compile Include="Proto\RoleOperation_EnterGameProto.cs" />
+    <Compile Include="Proto\RoleOperation_EnterGameReturnProto.cs" />
+    <Compile Include="Proto\RoleOperation_LogOnGameServerProto.cs" />
+    <Compile Include="Proto\RoleOperation_LogOnGameServerReturnProto.cs" />
+    <Compile Include="Proto\RoleOperation_SelectRoleInfoProto.cs" />
+    <Compile Include="Proto\RoleOperation_SelectRoleInfoReturnProto.cs" />
+    <Compile Include="Proto\Shop_BuyProductProto.cs" />
+    <Compile Include="Proto\Shop_BuyProductReturnProto.cs" />
+    <Compile Include="Proto\System_GameServerConfigReturnProto.cs" />
+    <Compile Include="Proto\System_SendLocalTimeProto.cs" />
+    <Compile Include="Proto\System_ServerTimeReturnProto.cs" />
+    <Compile Include="Proto\Task_SearchTaskProto.cs" />
+    <Compile Include="Proto\Task_SearchTaskReturnProto.cs" />
+    <Compile Include="Proto\testProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleMoveProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleResurgenceProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleUpdateInfoProto.cs" />
+    <Compile Include="Proto\WorldMap_CurrRoleUseSkillProto.cs" />
+    <Compile Include="Proto\WorldMap_InitRoleProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleDieProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleEnterProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleLeaveProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleMoveProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleResurgenceProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleUpdateInfoProto.cs" />
+    <Compile Include="Proto\WorldMap_OtherRoleUseSkillProto.cs" />
+    <Compile Include="Proto\WorldMap_PosProto.cs" />
+    <Compile Include="Proto\WorldMap_RoleAlreadyEnterProto.cs" />
+    <Compile Include="Proto\WorldMap_RoleEnterProto.cs" />
+    <Compile Include="Proto\WorldMap_RoleEnterReturnProto.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="RoleMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
